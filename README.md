@@ -30,11 +30,11 @@ We invite you to experience the magic that unfolded during the Uppsala Universit
 
 In the collaborative spirit of game development, Eepy Studio proudly presents the team members who contributed their talents and expertise to bring this project to reality.
 
-- Anastasiia Maklakova: Co-Creator, Artist, and Game Designer
-- Cristian De Santis: Co-Creator, Music Composer, Sound Designer, and Game Designer
-- Jesse Wilson: Co-Creator, Artist, and Game Designer
-- Juan Felipe Gutierrez: Co-Creator, Lead Programmer, and Game Designer
-- Vera Jeukendrup: Co-Creator, Artist, and Game Designer
+- **Anastasiia Maklakova**: Co-Creator, Artist, and Game Designer
+- **Cristian De Santis**: Co-Creator, Music Composer, Sound Designer, and Game Designer
+- **Jesse Wilson**: Co-Creator, Artist, and Game Designer
+- **Juan Felipe Gutierrez**: Co-Creator, Lead Programmer, and Game Designer
+- **Vera Jeukendrup**: Co-Creator, Artist, and Game Designer
 
 
 Each team member played a crucial role in shaping the vision and execution of the game, showcasing a blend of artistic creativity, technical proficiency, and game design expertise. Eepy Studio extends its gratitude to every individual involved in this collaborative endeavor.
