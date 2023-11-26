@@ -1,5 +1,15 @@
 # Misfortune 
 
+----------------------------------------------------------
+
+ <br>
+
+![TITLE2](https://github.com/Pecas-Dev/Misfortune/assets/91339821/c8f0e8ec-1ea1-4f9f-ba45-d8aa51a60e1e)
+
+ <br>
+
+----------------------------------------------------------
+
  Welcome to  **Misfortune** (_Subject to Change_), a captivating creation born from the imaginative minds at Eepy Studio. Crafted exclusively for the Uppsala University Winter Game Jam 2023,  this short yet immersive video game showcases our team's passion for game development and creative collaboration.
 
  <br>
