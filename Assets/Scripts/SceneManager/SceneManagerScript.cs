@@ -5,17 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerScript : MonoBehaviour
 {
-    void Start()
-    {
-
-    }
-
-
-    void Update()
-    {
-
-    }
-
     public void ToStartScene()
     {
         if (SceneManager.GetActiveScene().name == "Game_MainMenuScene")

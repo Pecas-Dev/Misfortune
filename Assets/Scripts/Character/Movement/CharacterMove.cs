@@ -18,6 +18,9 @@ public class CharacterMove : MonoBehaviour
 
     bool isGrounded = false;
 
+    public bool isPrincessGlitching = false;
+
+
 
     void Start()
     {
@@ -29,6 +32,10 @@ public class CharacterMove : MonoBehaviour
     {
         PlayerMovement();
         PlayerJump();
+
+        FlipCompleteCharacter();
+
+        BlockMovement();
     }
 
     void PlayerMovement()
@@ -43,22 +50,40 @@ public class CharacterMove : MonoBehaviour
 
     void PlayerJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
-            {
-                isGrounded = true;
-            }
-            else
-            {
-                isGrounded = false;
-            }
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("Ground"));
 
-            if (isGrounded == true)
-            {
-                playerRb.velocity = new Vector2(0, jumpSpeed);
-                isGrounded = false;
-            }
+        if (hit.collider != null)
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            playerRb.velocity = new Vector2(0, jumpSpeed);
+            isGrounded = false;
+        }
+    }
+
+    void FlipCompleteCharacter()
+    {
+        bool isMovingHorizontal = Mathf.Abs(playerRb.velocity.x) > Mathf.Epsilon;
+
+        if (isMovingHorizontal && !isPrincessGlitching)
+        {
+            transform.localScale = new Vector2(Mathf.Sign(playerRb.velocity.x) * 0.15f, 0.15f);
+        }
+    }
+
+    void BlockMovement()
+    {
+        if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Princess")))
+        {
+            playerRb.velocity = new Vector2(0, 0);
+            isPrincessGlitching = true;
         }
     }
 }
