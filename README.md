@@ -30,9 +30,18 @@ We invite you to experience the magic that unfolded during the Uppsala Universit
 
 # Controls
 
-- _Coming Soon_
+- WASD or Arrow Keys to **Move Horizontally**
+- Spacebar to **Jump**
   
  <br>
+ 
+----------------------------------------------------------
+
+# Download Instructions
+
+- _Coming Soon_
+
+<br>
  
 ----------------------------------------------------------
  
@@ -55,4 +64,4 @@ Each team member played a crucial role in shaping the vision and execution of th
 
 # Notes
 
-- _Coming Soon_
+- _Thank you so much to the Eepy team members, this wouldn't have been possible without your amazing work!!!_
