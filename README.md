@@ -1,6 +1,16 @@
 # Misfortune 
 
- Welcome to  **Misfortune** (_Subject to Change_), a captivating creation born from the imaginative minds at Eepy Studio. Crafted exclusively for the Uppsala University Winter Game Jam 2023,  this short yet immersive video game showcases our team's passion for game development and creative collaboration.
+----------------------------------------------------------
+
+ <br>
+
+![TITLE2](https://github.com/Pecas-Dev/Misfortune/assets/91339821/c8f0e8ec-1ea1-4f9f-ba45-d8aa51a60e1e)
+
+ <br>
+
+----------------------------------------------------------
+
+ Welcome to  **Misfortune**, a captivating creation born from the imaginative minds at Eepy Studio. Crafted exclusively for the Uppsala University Winter Game Jam 2023,  this short yet immersive video game showcases our team's passion for game development and creative collaboration.
 
  <br>
  
@@ -10,9 +20,9 @@
    
  <br>
 
- **Misfortune** (_Subject to Change_) is a 2D masterpiece brought to life using the Unity engine. Immerse yourself in a world where unexpected twists and glitches shape the narrative, transforming a classic hero's journey into a twist of events and an unforgettable adventure. This project reflects the dedication  of Eepy Studio's members, showcasing a harmonious blend of artistic expression, musical prowess, programming expertise, and game design innovation.
+ **Misfortune** is a 2D masterpiece brought to life using the Unity engine. Immerse yourself in a world where unexpected twists and glitches shape the narrative, transforming a classic hero's journey into a twist of events and an unforgettable adventure. This project reflects the dedication  of Eepy Studio's members, showcasing a harmonious blend of artistic expression, musical prowess, programming expertise, and game design innovation.
 
-We invite you to experience the magic that unfolded during the Uppsala University Winter Game Jam 2023 through  **Misfortune** (_Subject to Change_). Thank you for joining us on this exciting journey!
+We invite you to experience the magic that unfolded during the Uppsala University Winter Game Jam 2023 through  **Misfortune**. Thank you for joining us on this exciting journey!
 
  <br>
  
