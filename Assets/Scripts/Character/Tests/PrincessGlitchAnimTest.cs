@@ -5,12 +5,14 @@ using UnityEngine;
 public class PrincessGlitchAnimTest : MonoBehaviour
 {
     BoxCollider2D princessCollider;
+    CapsuleCollider2D princessColliderSecondLevel;
     Animator princessGlitchAnimatorTest;
 
     void Start()
     {
         princessCollider = GetComponent<BoxCollider2D>();
         princessGlitchAnimatorTest = GetComponent<Animator>();
+        princessColliderSecondLevel = GetComponent<CapsuleCollider2D>();
     }
 
     void Update()
@@ -24,7 +26,7 @@ public class PrincessGlitchAnimTest : MonoBehaviour
             princessGlitchAnimatorTest.SetBool("isGlitch", false);
         }
 
-        if (Input.GetKey(KeyCode.J))
+        if ((princessColliderSecondLevel.IsTouchingLayers(LayerMask.GetMask("Player"))))
         {
             princessGlitchAnimatorTest.SetBool("isMajorGlitch", true);
         }
@@ -33,4 +35,5 @@ public class PrincessGlitchAnimTest : MonoBehaviour
             princessGlitchAnimatorTest.SetBool("isMajorGlitch", false);
         }
     }
+
 }

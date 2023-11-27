@@ -31,6 +31,11 @@ public class CrossfadeTransitions : MonoBehaviour
         {
             StartCoroutine(SecondLevelTransition());
         }
+
+        if (SceneManager.GetActiveScene().name == "SecondGameScene")
+        {
+            StartCoroutine(DecoyLevelTransition());
+        }
     }
 
     IEnumerator FirstLevelTransition()
@@ -53,6 +58,20 @@ public class CrossfadeTransitions : MonoBehaviour
             yield return new WaitForSeconds(1.5f);
 
             SceneManager.LoadScene("SecondGameScene");
+        }
+    }
+
+    IEnumerator DecoyLevelTransition()
+    {
+        if (playerScript.isPrincessGlitching == true)
+        {
+            yield return new WaitForSeconds(2.5f);
+
+            crossfadeAnimator.SetTrigger("Start");
+
+            yield return new WaitForSeconds(1.5f);
+
+            SceneManager.LoadScene("DecoyMenuScene");
         }
     }
 }

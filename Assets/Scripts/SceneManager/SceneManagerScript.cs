@@ -28,4 +28,12 @@ public class SceneManagerScript : MonoBehaviour
             SceneManager.LoadScene("Game_MainMenuScene");
         }
     }
+
+    public void ToScreamerScene()
+    {
+        if (SceneManager.GetActiveScene().name == "DecoyMenuScene")
+        {
+            SceneManager.LoadScene("Screamer");
+        }
+    }
 }

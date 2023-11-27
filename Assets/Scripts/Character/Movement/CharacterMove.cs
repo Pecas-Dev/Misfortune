@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CharacterMove : MonoBehaviour
 {
-    [SerializeField] float playerSpeed = 5f;
+    [SerializeField] public float playerSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
 
 
-    Rigidbody2D playerRb;
+    public Rigidbody2D playerRb;
     BoxCollider2D playerCollider;
-    //Animator playerAnimator;
+    Animator playerAnimator;
 
-    float xInputValue;
+    public float xInputValue;
     float yInputValue;
 
 
@@ -26,6 +26,7 @@ public class CharacterMove : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<BoxCollider2D>();
+        playerAnimator = GetComponent<Animator>();
     }
 
     void Update()
@@ -46,11 +47,12 @@ public class CharacterMove : MonoBehaviour
         Vector2 playerVelocity = new Vector2(xInputValue * playerSpeed, playerRb.velocity.y);
 
         playerRb.velocity = playerVelocity;
-    }
 
-    void PlayerJump()
-    {
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("Ground"));
+
+        bool isMovingHorizontal = Mathf.Abs(playerRb.velocity.x) > Mathf.Epsilon;
+
 
         if (hit.collider != null)
         {
@@ -61,8 +63,36 @@ public class CharacterMove : MonoBehaviour
             isGrounded = false;
         }
 
+        if (isGrounded)
+        {
+            playerAnimator.SetBool("isWalking", isMovingHorizontal);
+            playerAnimator.SetFloat("walkingMultiplier", 1f);
+        }
+        else
+        {
+            playerAnimator.SetBool("isWalking", isMovingHorizontal);
+            playerAnimator.SetFloat("walkingMultiplier", 0f);
+        }
+    }
+
+    void PlayerJump()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("Ground"));
+
+        if (hit.collider != null)
+        {
+            isGrounded = true;
+            playerAnimator.SetBool("isJump", false);
+        }
+        else
+        {
+            isGrounded = false;
+            playerAnimator.SetBool("isJump", true);
+        }
+
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            playerAnimator.SetBool("isJump", true);
             playerRb.velocity = new Vector2(0, jumpSpeed);
             isGrounded = false;
         }
@@ -80,10 +110,13 @@ public class CharacterMove : MonoBehaviour
 
     void BlockMovement()
     {
+        xInputValue = Input.GetAxis("Horizontal");
+
         if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Princess")))
         {
             playerRb.velocity = new Vector2(0, 0);
             isPrincessGlitching = true;
         }
     }
+
 }
