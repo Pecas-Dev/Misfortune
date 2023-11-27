@@ -2,22 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Kino;
+using Cinemachine;
 using Unity.VisualScripting;
 
 public class GlitchActivationFirstLevel : MonoBehaviour
 {
     CharacterMove characterScript;
 
+    [SerializeField] CameraShakeFirstLevel cameraShakeScriptFirstLevel;
+
     [SerializeField] DigitalGlitch glitchEffect;
     [SerializeReference] AudioSource glitchAudioSource;
     [SerializeField] AudioClip glitchClip;
-    [SerializeField] float intensity;
+    [SerializeField] public float intensity;
+    [SerializeField] float cameraShakeIntensity;
+
 
     void Start()
     {
         glitchAudioSource.clip = glitchClip;
         glitchAudioSource.volume = 0.25f;
+
         characterScript = FindObjectOfType<CharacterMove>();
+    }
+
+    void Update()
+    {
+        
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -39,6 +50,8 @@ public class GlitchActivationFirstLevel : MonoBehaviour
             }
 
             characterScript.playerSpeed = distance.magnitude / 5f;
+
+            CameraShakeFirstLevel.Instance.CameraShakeGradualIncrease(cameraShakeIntensity / distance.magnitude);
         }
     }
 
@@ -51,7 +64,9 @@ public class GlitchActivationFirstLevel : MonoBehaviour
 
             glitchAudioSource.volume = 0.25f;
 
-            glitchAudioSource.Stop();
+            CameraShakeFirstLevel.Instance.CameraShakeGradualIncrease(0.0f);
+
+           glitchAudioSource.Stop();
         }
     }
 }

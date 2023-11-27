@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CharacterMove : MonoBehaviour
 {
+    public bool isPrincessGlitching = false;
+    public float xInputValue;
+
+
     [SerializeField] public float playerSpeed = 5f;
     [SerializeField] float jumpSpeed = 5f;
 
@@ -12,14 +16,12 @@ public class CharacterMove : MonoBehaviour
     BoxCollider2D playerCollider;
     Animator playerAnimator;
 
-    public float xInputValue;
+
     float yInputValue;
 
 
     bool isGrounded = false;
-
-    public bool isPrincessGlitching = false;
-
+    bool canFlip = true;
 
 
     void Start()
@@ -102,10 +104,15 @@ public class CharacterMove : MonoBehaviour
     {
         bool isMovingHorizontal = Mathf.Abs(playerRb.velocity.x) > Mathf.Epsilon;
 
-        if (isMovingHorizontal && !isPrincessGlitching)
+        if (isMovingHorizontal && !isPrincessGlitching && canFlip)
         {
             transform.localScale = new Vector2(Mathf.Sign(playerRb.velocity.x) * 0.15f, 0.15f);
         }
+    }
+
+    public void SetCanFlip(bool canFlipValue)
+    {
+        canFlip = canFlipValue;
     }
 
     void BlockMovement()
@@ -115,6 +122,8 @@ public class CharacterMove : MonoBehaviour
         if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Princess")))
         {
             playerRb.velocity = new Vector2(0, 0);
+            canFlip = false;
+            playerRb.constraints = RigidbodyConstraints2D.FreezeAll;
             isPrincessGlitching = true;
         }
     }

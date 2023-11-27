@@ -27,11 +27,16 @@ public class RestartLevel : MonoBehaviour
     {
         if (restartCollider.IsTouchingLayers(LayerMask.GetMask("Player")))
         {
+
             deathAudioSource.Play();
 
             characterScript.playerRb.velocity = new Vector2(0, 0);
+            characterScript.playerRb.constraints = RigidbodyConstraints2D.FreezeAll;
 
-            Invoke("RestartScene", 0.75f);
+            characterScript.SetCanFlip(false);
+
+            Invoke("RestartScene", 0.65f);
+
         }
     }
 

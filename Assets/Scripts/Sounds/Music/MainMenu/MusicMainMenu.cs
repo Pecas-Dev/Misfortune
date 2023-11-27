@@ -50,7 +50,7 @@ public class MusicMainMenu : MonoBehaviour
                 audioSource.Play();
             }
         }
-        else if (scene.name == "FirstGameScene")
+        else if (scene.name == "FirstGameScene" || scene.name == "CreditsScene")
         {
             Destroy(gameObject);
         }
