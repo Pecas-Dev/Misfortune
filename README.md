@@ -64,4 +64,6 @@ Each team member played a crucial role in shaping the vision and execution of th
 
 # Notes
 
+- ​It is **recommended** that you **play the game with the Windows Download** if you want a **more complete experience**, due that WebGL compresses some assets like sounds that will not be heard ​during the gameplay in the WebGL version, but will be heard ​during the Windows Version.
+
 - _Thank you so much to the Eepy team members, this wouldn't have been possible without your amazing work!!!_
