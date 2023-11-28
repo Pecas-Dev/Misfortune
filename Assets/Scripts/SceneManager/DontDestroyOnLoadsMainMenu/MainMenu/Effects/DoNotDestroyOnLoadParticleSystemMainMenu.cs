@@ -22,7 +22,7 @@ public class DoNotDestroyOnLoadParticleSystemMainMenu : MonoBehaviour
 
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "FirstGameScene")
+        if(SceneManager.GetActiveScene().name == "FirstGameScene" || SceneManager.GetActiveScene().name == "CreditsScene" || SceneManager.GetActiveScene().name == "PreCreditsScene")
         {
             Destroy(gameObject);
         }

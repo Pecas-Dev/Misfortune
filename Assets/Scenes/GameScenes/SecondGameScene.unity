@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 1121541}
   - component: {fileID: 1121544}
   - component: {fileID: 1121543}
-  - component: {fileID: 1121542}
   - component: {fileID: 1121545}
   - component: {fileID: 1121546}
+  - component: {fileID: 1121547}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -159,20 +159,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 779617734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1121542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 1121546}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &1121543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -331,7 +317,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -415,6 +401,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1121547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &6956663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,9 +1167,9 @@ GameObject:
   - component: {fileID: 112765792}
   - component: {fileID: 112765797}
   - component: {fileID: 112765796}
-  - component: {fileID: 112765795}
   - component: {fileID: 112765794}
   - component: {fileID: 112765793}
+  - component: {fileID: 112765798}
   m_Layer: 0
   m_Name: Spike (16)
   m_TagString: Untagged
@@ -1204,7 +1204,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1341,20 +1341,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &112765795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112765791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &112765796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1452,6 +1438,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &112765798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112765791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &112912902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,9 +1664,9 @@ GameObject:
   - component: {fileID: 257911358}
   - component: {fileID: 257911362}
   - component: {fileID: 257911361}
-  - component: {fileID: 257911360}
   - component: {fileID: 257911359}
   - component: {fileID: 257911363}
+  - component: {fileID: 257911364}
   m_Layer: 0
   m_Name: Spike (12)
   m_TagString: Untagged
@@ -1742,20 +1742,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &257911360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257911357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &257911361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1865,7 +1851,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1949,6 +1935,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &257911364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257911357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &276268525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2908,9 +2908,9 @@ GameObject:
   m_Component:
   - component: {fileID: 436431761}
   - component: {fileID: 436431762}
-  - component: {fileID: 436431764}
   - component: {fileID: 436431765}
   - component: {fileID: 436431766}
+  - component: {fileID: 436431767}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -2985,20 +2985,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &436431764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436431760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!60 &436431765
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3064,7 +3050,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3148,6 +3134,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &436431767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436431760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &437284300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,7 +3177,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 689a0c2d64b4c9c4d9c1885300f05950, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.317
+  m_Volume: 0.312
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3417,9 +3417,9 @@ GameObject:
   - component: {fileID: 490252712}
   - component: {fileID: 490252715}
   - component: {fileID: 490252714}
-  - component: {fileID: 490252713}
   - component: {fileID: 490252716}
   - component: {fileID: 490252717}
+  - component: {fileID: 490252718}
   m_Layer: 0
   m_Name: Spike (6)
   m_TagString: Untagged
@@ -3442,20 +3442,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 401557362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &490252713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490252711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &490252714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3618,7 +3604,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3702,6 +3688,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &490252718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490252711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &507332042
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,9 +3843,9 @@ GameObject:
   - component: {fileID: 517684013}
   - component: {fileID: 517684016}
   - component: {fileID: 517684015}
-  - component: {fileID: 517684014}
   - component: {fileID: 517684017}
   - component: {fileID: 517684018}
+  - component: {fileID: 517684019}
   m_Layer: 0
   m_Name: Spike (11)
   m_TagString: Untagged
@@ -3868,20 +3868,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 401557362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &517684014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517684012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &517684015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4044,7 +4030,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4128,6 +4114,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &517684019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517684012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &537861299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4581,9 +4581,9 @@ GameObject:
   - component: {fileID: 698777533}
   - component: {fileID: 698777537}
   - component: {fileID: 698777536}
-  - component: {fileID: 698777535}
   - component: {fileID: 698777534}
   - component: {fileID: 698777538}
+  - component: {fileID: 698777539}
   m_Layer: 0
   m_Name: Spike (7)
   m_TagString: Untagged
@@ -4659,20 +4659,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &698777535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698777532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &698777536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4782,7 +4768,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4866,6 +4852,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &698777539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698777532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &719001790
 GameObject:
   m_ObjectHideFlags: 0
@@ -5240,9 +5240,9 @@ GameObject:
   - component: {fileID: 818362634}
   - component: {fileID: 818362637}
   - component: {fileID: 818362636}
-  - component: {fileID: 818362635}
   - component: {fileID: 818362638}
   - component: {fileID: 818362639}
+  - component: {fileID: 818362640}
   m_Layer: 0
   m_Name: Spike (9)
   m_TagString: Untagged
@@ -5265,20 +5265,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 401557362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &818362635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818362633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &818362636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5441,7 +5427,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5525,6 +5511,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &818362640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818362633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &883142278
 GameObject:
   m_ObjectHideFlags: 0
@@ -5989,9 +5989,9 @@ GameObject:
   - component: {fileID: 983756011}
   - component: {fileID: 983756014}
   - component: {fileID: 983756013}
-  - component: {fileID: 983756012}
   - component: {fileID: 983756015}
   - component: {fileID: 983756016}
+  - component: {fileID: 983756017}
   m_Layer: 0
   m_Name: Spike (5)
   m_TagString: Untagged
@@ -6014,20 +6014,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 401557362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &983756012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983756010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &983756013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6190,7 +6176,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6274,6 +6260,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &983756017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983756010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &994693836
 GameObject:
   m_ObjectHideFlags: 0
@@ -7599,7 +7599,7 @@ MonoBehaviour:
   glitchAudioSource: {fileID: 1270031768}
   glitchClip: {fileID: 8300000, guid: 1c01d8ee82e06df4cb07542e08a23335, type: 3}
   intensity: 0.72
-  cameraShakeIntensity: 3.3
+  cameraShakeIntensity: 5
 --- !u!1 &1278020606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8156,9 +8156,9 @@ GameObject:
   - component: {fileID: 1430691879}
   - component: {fileID: 1430691883}
   - component: {fileID: 1430691882}
-  - component: {fileID: 1430691881}
   - component: {fileID: 1430691880}
   - component: {fileID: 1430691884}
+  - component: {fileID: 1430691885}
   m_Layer: 0
   m_Name: Spike (8)
   m_TagString: Untagged
@@ -8234,20 +8234,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &1430691881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430691878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &1430691882
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8357,7 +8343,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8441,6 +8427,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1430691885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430691878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &1488968688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9012,9 +9012,9 @@ GameObject:
   - component: {fileID: 1566147519}
   - component: {fileID: 1566147522}
   - component: {fileID: 1566147521}
-  - component: {fileID: 1566147520}
   - component: {fileID: 1566147523}
   - component: {fileID: 1566147524}
+  - component: {fileID: 1566147525}
   m_Layer: 0
   m_Name: Spike (4)
   m_TagString: Untagged
@@ -9037,20 +9037,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 401557362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1566147520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566147518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &1566147521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9213,7 +9199,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9297,6 +9283,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1566147525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566147518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &1575339626
 GameObject:
   m_ObjectHideFlags: 0
@@ -9308,9 +9308,9 @@ GameObject:
   - component: {fileID: 1575339627}
   - component: {fileID: 1575339630}
   - component: {fileID: 1575339629}
-  - component: {fileID: 1575339628}
   - component: {fileID: 1575339631}
   - component: {fileID: 1575339632}
+  - component: {fileID: 1575339633}
   m_Layer: 0
   m_Name: Square (1)
   m_TagString: Untagged
@@ -9333,20 +9333,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 779617734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1575339628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575339626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 1121546}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &1575339629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9505,7 +9491,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9589,6 +9575,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1575339633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575339626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &1597146552
 GameObject:
   m_ObjectHideFlags: 0
@@ -10706,9 +10706,9 @@ GameObject:
   - component: {fileID: 1853485297}
   - component: {fileID: 1853485299}
   - component: {fileID: 1853485298}
-  - component: {fileID: 1853485300}
   - component: {fileID: 1853485301}
   - component: {fileID: 1853485302}
+  - component: {fileID: 1853485303}
   m_Layer: 0
   m_Name: Spike (1)
   m_TagString: Untagged
@@ -10828,20 +10828,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1853485300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853485296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!60 &1853485301
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10907,7 +10893,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10991,6 +10977,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1853485303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853485296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &1877659957
 GameObject:
   m_ObjectHideFlags: 0
@@ -11132,9 +11132,9 @@ GameObject:
   - component: {fileID: 1878569077}
   - component: {fileID: 1878569081}
   - component: {fileID: 1878569080}
-  - component: {fileID: 1878569079}
   - component: {fileID: 1878569078}
   - component: {fileID: 1878569082}
+  - component: {fileID: 1878569083}
   m_Layer: 0
   m_Name: Spike (13)
   m_TagString: Untagged
@@ -11210,20 +11210,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &1878569079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878569076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &1878569080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11333,7 +11319,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11417,6 +11403,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1878569083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878569076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &1881635731
 GameObject:
   m_ObjectHideFlags: 0
@@ -11428,9 +11428,9 @@ GameObject:
   - component: {fileID: 1881635732}
   - component: {fileID: 1881635736}
   - component: {fileID: 1881635735}
-  - component: {fileID: 1881635734}
   - component: {fileID: 1881635733}
   - component: {fileID: 1881635737}
+  - component: {fileID: 1881635738}
   m_Layer: 0
   m_Name: Spike (14)
   m_TagString: Untagged
@@ -11506,20 +11506,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &1881635734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881635731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &1881635735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11629,7 +11615,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11713,6 +11699,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1881635738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881635731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &1915876059
 GameObject:
   m_ObjectHideFlags: 0
@@ -12602,9 +12602,9 @@ GameObject:
   - component: {fileID: 2059616869}
   - component: {fileID: 2059616872}
   - component: {fileID: 2059616871}
-  - component: {fileID: 2059616870}
   - component: {fileID: 2059616873}
   - component: {fileID: 2059616874}
+  - component: {fileID: 2059616875}
   m_Layer: 0
   m_Name: Spike (10)
   m_TagString: Untagged
@@ -12627,20 +12627,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 401557362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2059616870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059616868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &2059616871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12803,7 +12789,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12887,6 +12873,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2059616875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059616868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &2059696731
 GameObject:
   m_ObjectHideFlags: 0
@@ -12959,6 +12959,7 @@ MonoBehaviour:
   playerSpeed: 5
   jumpSpeed: 7
   playerRb: {fileID: 0}
+  playerAnimator: {fileID: 0}
 --- !u!50 &2061753836
 Rigidbody2D:
   serializedVersion: 4
@@ -13110,7 +13111,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 558d3ea1e78199049ae3a1cc4bf21144, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7962264, b: 0.7962264, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13261,7 +13262,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -13328,7 +13329,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 6.02
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -14082,7 +14083,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 18.29
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -17977,7 +17978,7 @@ Transform:
   m_GameObject: {fileID: 2067151768}
   serializedVersion: 2
   m_LocalRotation: {x: -0.01583159, y: 0.70747566, z: -0.7064332, w: -0.013409366}
-  m_LocalPosition: {x: 78.6, y: 20.9, z: -1.3}
+  m_LocalPosition: {x: 78.6, y: 19.8, z: -1.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18158,9 +18159,9 @@ GameObject:
   - component: {fileID: 2098449621}
   - component: {fileID: 2098449626}
   - component: {fileID: 2098449625}
-  - component: {fileID: 2098449624}
   - component: {fileID: 2098449623}
   - component: {fileID: 2098449622}
+  - component: {fileID: 2098449627}
   m_Layer: 0
   m_Name: Spike (15)
   m_TagString: Untagged
@@ -18195,7 +18196,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.125
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -18332,20 +18333,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &2098449624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098449620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0296c3a0dd13ee4448e8ca6ed7d0f0c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAudioSource: {fileID: 257911363}
-  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!61 &2098449625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18443,6 +18430,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2098449627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098449620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9089db71603e4f409f4959181c37118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAudioSourceSecondLevel: {fileID: 1121546}
+  deathAudioClip: {fileID: 8300000, guid: 96bfbfb94fe78f946916d4b1d08a72c6, type: 3}
 --- !u!1 &2136842104
 GameObject:
   m_ObjectHideFlags: 0

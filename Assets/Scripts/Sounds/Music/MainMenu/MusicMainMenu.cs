@@ -42,15 +42,15 @@ public class MusicMainMenu : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Game_MainMenuScene" || scene.name == "Game_Options_MainMenu")
+        if (scene.name == "Game_MainMenuScene" || scene.name == "Game_Options_MainMenu" || scene.name == "Game_SecretMenu_MainMenu")
         {
-            if(!audioSource.isPlaying)
+            if (!audioSource.isPlaying)
             {
-               //audioSource.time = PlayerPrefs.GetFloat("SongPlaybackPosition", 0f);
+                //audioSource.time = PlayerPrefs.GetFloat("SongPlaybackPosition", 0f);
                 audioSource.Play();
             }
         }
-        else if (scene.name == "FirstGameScene" || scene.name == "CreditsScene")
+        else if (scene.name == "FirstGameScene" || scene.name == "CreditsScene" || scene.name == "PreCreditsScene")
         {
             Destroy(gameObject);
         }

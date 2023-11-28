@@ -36,11 +36,6 @@ public class CrossfadeTransitions : MonoBehaviour
         {
             StartCoroutine(DecoyLevelTransition());
         }
-
-        if (SceneManager.GetActiveScene().name == "Screamer")
-        {
-            StartCoroutine(CreditsTransition());
-        }
     }
 
     IEnumerator FirstLevelTransition()
@@ -78,14 +73,5 @@ public class CrossfadeTransitions : MonoBehaviour
 
             SceneManager.LoadScene("DecoyMenuScene");
         }
-    }
-
-    IEnumerator CreditsTransition()
-    {
-        yield return new WaitForSeconds(16f);
-
-        crossfadeAnimator.SetTrigger("Start");
-
-        SceneManager.LoadScene("CreditsScene");
     }
 }

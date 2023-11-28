@@ -14,7 +14,7 @@ public class CharacterMove : MonoBehaviour
 
     public Rigidbody2D playerRb;
     BoxCollider2D playerCollider;
-    Animator playerAnimator;
+    public Animator playerAnimator;
 
 
     float yInputValue;

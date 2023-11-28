@@ -22,7 +22,7 @@ public class DoNotDestroyOnLoadCameraMainMenu : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "FirstGameScene" || SceneManager.GetActiveScene().name == "CreditsScene")
+        if (SceneManager.GetActiveScene().name == "FirstGameScene" || SceneManager.GetActiveScene().name == "CreditsScene" || SceneManager.GetActiveScene().name == "PreCreditsScene")
         {
             Destroy(gameObject);
         }
